@@ -33,7 +33,7 @@ public class SynchronizedSwimming {
 		System.out.println(swimmer.name + " finished!");
 	}
 
-	public static void takeTurn(Swimmer swimmer) {
+	synchronized public static void takeTurn(Swimmer swimmer) {
 		try {
 			swimLap(swimmer);
 			Thread.sleep(100);
